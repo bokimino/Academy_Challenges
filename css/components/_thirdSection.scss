@@ -1,0 +1,71 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+@use 'sass:math';
+
+.thirdSection {
+	background-color: var.$background-color-base;
+	.inner {
+		@extend %wrap80;
+		@extend %section;
+	}
+	.tittleContainer {
+		@extend %wrap60;
+		text-align: center;
+	}
+	.featuresContainer {
+		@extend %section;
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+
+		.featureBox {
+			flex-basis: 32%;
+			text-align: center;
+			&:not(:last-child) {
+				margin-right: math.div(var.$gutter-base, 2);
+			}
+			@include mix.tablet-styles {
+				flex-basis: 60%;
+				&:not(:last-child) {
+					margin-right: 0;
+				}
+			}
+		}
+		i {
+			color: var.$text-color-secondary;
+			font-size: calc(var.$font-size-medium * 2);
+			padding-bottom: math.div(var.$gutter-base, 2);
+		}
+	}
+	form {
+		@extend %section;
+		justify-content: space-between;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.formBox {
+		flex-basis: 70%;
+		@include mix.tablet-styles {
+			flex-basis: 100%;
+		}
+		input {
+			padding-top: math.div(var.$gutter-base, 3);
+			padding-bottom: math.div(var.$gutter-base, 3);
+			width: 90%;
+		}
+	}
+	button {
+		border: none;
+		flex-basis: 30%;
+		&:hover {
+			cursor: pointer;
+		}
+		@include mix.tablet-styles {
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: math.div(var.$gutter-base, 2);
+		}
+	}
+}

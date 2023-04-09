@@ -1,0 +1,75 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+@use 'sass:math';
+
+.firstSection {
+	background-color: var.$text-color-secondary;
+	background-image: url(/css/images/hero.jpg);
+	background-position: center;
+	height: 100vh;
+	position: relative;
+
+	.inner {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.navSection {
+		display: flex;
+		justify-content: space-between;
+		padding-top: math.div(var.$gutter-base, 2);
+		@include mix.mobile-l-styles {
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+	.logo {
+		@include mix.mobile-l-styles {
+			margin-bottom: math.div(var.$gutter-base, 2);
+		}
+		span {
+			color: var.$text-color-base;
+			font-size: 20px;
+			@include mix.mobile-l-styles {
+				font-size: 25px;
+			}
+		}
+	}
+	ul {
+		list-style-type: none;
+		display: flex;
+		padding-left: 0;
+		@include mix.mobile-l-styles {
+			justify-content: space-between;
+		}
+		li:not(:last-child) {
+			margin-right: math.div(var.$gutter-base, 2);
+			@include mix.mobile-l-styles {
+				margin-right: 0;
+			}
+		}
+
+		a {
+			text-decoration: none;
+			color: var.$text-color-base;
+			// margin-right: math.div(var.$gutter-base, 2);
+			&:not(:last-child) {
+				margin-right: math.div(var.$gutter-base, 2);
+			}
+		}
+		a:hover {
+			background-color: var.$hover-color;
+		}
+	}
+	.tittleBox {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		color: var.$text-color-base;
+		h1 {
+			text-transform: capitalize;
+		}
+	}
+}

@@ -1,0 +1,60 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+@use 'sass:math';
+
+.secondSection {
+	@extend %wrap80;
+	@extend %section;
+	.tittleContainer {
+		@extend %wrap60;
+		text-align: center;
+	}
+	.imgContainer {
+		@extend %section;
+		height: 100%;
+	}
+	.imgRow {
+		display: flex;
+		height: 240px;
+		margin-bottom: math.div(var.$gutter-base, 2);
+		@include mix.tablet-styles {
+			height: 1100px;
+			flex-wrap: wrap;
+		}
+
+		img {
+			height: 100%;
+		}
+
+		.picOne {
+			flex-basis: 40%;
+			&:first-child {
+				margin-right: math.div(var.$gutter-base, 2);
+			}
+
+			@include mix.tablet-styles {
+				flex-basis: 100%;
+				margin-bottom: math.div(var.$gutter-base, 2);
+
+				&:first-child {
+					margin-right: 0px;
+				}
+			}
+		}
+		.picTwo {
+			flex-basis: 60%;
+
+			&:first-child {
+				margin-right: math.div(var.$gutter-base, 2);
+			}
+			@include mix.tablet-styles {
+				flex-basis: 100%;
+
+				&:first-child {
+					margin-right: 0px;
+					margin-bottom: math.div(var.$gutter-base, 2);
+				}
+			}
+		}
+	}
+}

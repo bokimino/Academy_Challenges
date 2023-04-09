@@ -1,0 +1,49 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+@use 'sass:math';
+
+footer {
+	background-color: var.$background-color-primary;
+	.inner {
+		@extend %wrap40;
+		@extend %section;
+		text-align: center;
+	}
+	.iconContainer {
+		display: flex;
+		justify-content: center;
+		margin-bottom: math.div(var.$gutter-base, 2);
+	}
+	.iconBox {
+		height: 40px;
+		width: 40px;
+		font-size: calc(var.$font-size-medium * 1.5);
+		background-color: var.$background-color-base;
+		border-radius: 6px;
+
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+		@include mix.tablet-styles {
+			height: 25px;
+			width: 25px;
+			font-size: var.$font-size-medium;
+		}
+	}
+	i {
+		color: var.$text-color-thirtiary;
+	}
+	.textDescription {
+		text-transform: uppercase;
+		@include mix.tablet-styles {
+			font-size: 12px;
+		}
+		p {
+			margin-bottom: 0;
+		}
+		a {
+			color: var.$text-color-base;
+			text-decoration: none;
+		}
+	}
+}

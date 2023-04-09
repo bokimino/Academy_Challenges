@@ -1,0 +1,51 @@
+@use './variables' as var;
+@use 'sass:math';
+
+%section {
+	padding-top: (var.$gutter-base * 2);
+	padding-bottom: (var.$gutter-base * 2);
+
+	@media (max-width: 999px) {
+		padding-top: (var.$gutter-base);
+		padding-bottom: (var.$gutter-base);
+	}
+}
+
+%wrap80 {
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media (max-width: 999px) {
+		max-width: 90%;
+	}
+}
+%wrap60 {
+	max-width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media (max-width: 999px) {
+		max-width: 90%;
+	}
+}
+%wrap40 {
+	max-width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media (max-width: 999px) {
+		max-width: 90%;
+	}
+}
+@mixin tablet-styles {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin mobile-l-styles {
+	@media (max-width: 425px) {
+		@content;
+	}
+}
