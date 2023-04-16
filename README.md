@@ -90,3 +90,5 @@ For open source projects, say how it is licensed.
 
 ## Project status
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+
+Opened the main branch and through the main branch created several branches for each projects. On the first and the second project the html and style css are within the project folder which i resolved in the 3 and 4 project. Had issues with copy paste regarding projects , the change wasn't registered so i had to create the folders first within so i can add the elements there.
