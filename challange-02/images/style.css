@@ -1,0 +1,290 @@
+body {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+	margin: 0;
+}
+h2 {
+	margin-bottom: 20px;
+}
+h4 {
+	margin: 12px 0;
+}
+img {
+	width: 100%;
+}
+.whiteColor {
+	color: white;
+}
+.bgWhiteColor {
+	background-color: white;
+}
+.darkBlue {
+	background-color: rgba(39, 40, 51, 1);
+}
+.darkBlueOp {
+	background-color: rgba(39, 40, 51, 0.85);
+}
+.redColor {
+	background-color: #e44c65;
+}
+.textRedColor {
+	color: #e44c65;
+}
+.blueColor {
+	background-color: rgb(93, 93, 238);
+}
+.greenColor {
+	border-right: 6px solid rgb(45, 212, 81);
+}
+.lightWhite {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.textGrey {
+	color: rgba(200, 200, 200, 0.997);
+}
+.bgTransparent {
+	background-color: transparent;
+}
+.fontSZ-18 {
+	font-size: 18px;
+}
+.headContainer {
+	height: 100vh;
+	position: relative;
+}
+.tittleBox {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: right;
+}
+.tittleBox h1 , p {
+    margin-bottom: 8px;
+}
+ul {
+	list-style-type: none;
+}
+li {
+	margin: 12px 10px;
+}
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.topNav {
+	margin-right: 30px;
+}
+
+.topNav li {
+	float: left;
+}
+.rightNav {
+	float: right;
+}
+button {
+	border: none;
+	border-radius: 3px;
+    padding: 2px 4px;
+}
+
+.arrowBox {
+	position: absolute;
+	left: 50%;
+	bottom: 3px;
+	transform: translateX(-50%);
+}
+
+.textContainer {
+	height: 50vh;
+	border-top: 6px solid #e44c65;
+	position: absolute;
+	bottom: 0;
+}
+.textBox {
+	margin-top: 7%;
+	padding: 60px 20px 40px;
+	width: 30%;
+	float: left;
+}
+.photoContainer {
+	height: 100vh;
+	background-attachment: fixed;
+	position: relative;
+	background-size: cover;
+}
+.picOne {
+	background-image: url(./images/picture1.jpg);
+}
+.picTwo {
+	background-image: url(./images/picture2.jpeg);
+}
+.picThree {
+	background-image: url(./images/picture3.jpg);
+}
+.clear {
+	clear: both;
+}
+.textContainerTwo {
+	height: 100vh;
+	width: 36%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	border-left: 6px solid rgb(93, 93, 238);
+}
+.textBoxSide {
+	margin: 80px 30px;
+	padding: 60px 20px 40px;
+}
+
+.textBoxSide p {
+	margin-bottom: 15px;
+}
+.textBoxSide a {
+	margin-top: 15px;
+	padding: 10px 15px;
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	border: 1px solid white;
+	border-radius: 3px;
+}
+
+.textContainerThree {
+	height: 100vh;
+	width: 36%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.cardContainer {
+	height: 100vh;
+	position: relative;
+}
+.cardTittle {
+	height: 25vh;
+}
+.tittleText {
+	padding: 30px;
+	width: 50%;
+	position: absolute;
+	left: 50%;
+	top: 5%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+hr {
+	width: 23%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 1px solid #e44c65;
+}
+.cardSection {
+	margin: 80px auto 0;
+	width: 90%;
+}
+.card {
+	margin: 0 15px 40px 0;
+	width: 32%;
+	float: left;
+	text-align: center;
+}
+.icon {
+	margin: 0 auto;
+	height: 50px;
+	width: 50px;
+    line-height: 50px;
+	border-radius: 50%;
+}
+.socialIcon i {
+	padding: 14px;
+}
+
+.buttonBox {
+	width: 10%;
+	position: absolute;
+	bottom: 3%;
+	left: 50%;
+	transform: translate(-55%, -5%);
+}
+.buttonBox button {
+	padding: 9px;
+	border: 1px solid white;
+	border-radius: 2px;
+}
+
+.emailContainer {
+	padding: 100px;
+	position: relative;
+}
+.emailText {
+	width: 40%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.inputField {
+	margin-top: 12px;
+}
+.inputField input {
+	margin-right: 15px;
+	padding: 7px;
+	width: 55%;
+	border-radius: 3px;
+	border: 1px solid white;
+	outline: none;
+}
+.inputField input:focus {
+	border: 1px solid rgb(93, 93, 238);
+}
+.inputField input:hover {
+	cursor: none;
+}
+.inputField button {
+	padding: 8px;
+	width: 25%;
+}
+.pointer:hover {
+	cursor: pointer;
+}
+.bgHoverColorBlue:hover {
+	border-color: rgb(22, 159, 227);
+}
+.socialContainer {
+	padding: 100px;
+	position: relative;
+}
+.socialBox {
+	width: 40%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.socialIcon {
+	display: inline-block;
+	font-size: 30px;
+}
+.socialBox p a {
+	text-decoration: none;
+	border-bottom: 1px dotted rgba(200, 200, 200, 0.997);
+	border-bottom-width: 2px;
+}
