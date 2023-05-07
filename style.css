@@ -1,0 +1,22 @@
+.bg-photo {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url(./images/home.jpg);
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.navbar-nav .nav-item .nav-link.active {
+	background-color: transparent;
+	color: white;
+}
+html {
+	scroll-padding-top: 56px;
+}
+.hovbtn:hover {
+	background-color: rgb(247, 246, 246);
+	color: black !important;
+}
+.darkblue {
+	background-color: #591af1;
+}
