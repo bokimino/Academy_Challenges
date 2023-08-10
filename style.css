@@ -1,0 +1,5 @@
+.bgImg {
+	background-image: url(https://picsum.photos/seed/picsum/1200/1600);
+	background-position: center;
+	background-size: cover;
+}
