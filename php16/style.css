@@ -1,0 +1,32 @@
+.mainCover {
+	background-image: url(https://picsum.photos/id/280/1200/800);
+	background-color: rgb(152, 135, 135);
+	height: 100vh;
+	background-size: cover;
+	position: relative;
+}
+.box {
+	position: absolute !important;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.pageTwoCover {
+	background-image: url(https://picsum.photos/id/350/1400/900);
+	background-color: rgb(27, 187, 54);
+	height: 100%;
+	background-size: cover;
+	position: relative;
+}
+.pageThreeCover {
+	background-image: url(https://picsum.photos/seed/picsum/800/600);
+	height: 70vh;
+	background-size: cover;
+	background-color: rgb(108, 65, 65);
+}
+.navbar-light .navbar-nav .nav-link:hover {
+	color: rgb(8, 182, 11);
+}
+.card-group {
+	align-items: self-start !important;
+}
