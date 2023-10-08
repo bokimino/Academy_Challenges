@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			//Part 1
+			let number = 12;
+
+			if (number % 2 == 0) {
+				console.log(`The number ${number} is even`);
+			} else {
+				console.log(`The number ${number} is not even`);
+			}
+
+			//Part 2
+
+			for (let number = 10; number <= 100; number++) {
+				if (number % 2 == 0 && number % 3 == 0) {
+					console.log(number);
+				}
+			}
+			
+
+			// Part 3
+
+			
+			function isPrime(number) {
+				if (number <= 1) {
+					return false;
+				}
+				if (number <= 3) {
+					return true;
+				}
+				if (number % 2 === 0 || number % 3 === 0) {
+					return false;
+				}
+				for (let i = 5; i * i <= number; i += 6) {
+					if (number % i === 0 || number % (i + 2) === 0) {
+						return false;
+					}
+				}
+				return true;
+			}
+
+			function findSmallestAndLargest(numbers) {
+				if (numbers.length === 0) {
+					return 'No numbers provided.';
+				}
+
+				let smallest = numbers[0];
+				let largest = numbers[0];
+
+				for (let number of numbers) {
+					if (number < smallest) {
+						smallest = number;
+					}
+					if (number > largest) {
+						largest = number;
+					}
+				}
+
+				return { smallest, largest };
+			}
+
+			const Number = 13;
+			const Number2 = 15;
+			const Number3 = 20;
+
+			const numbers = [Number, Number2, Number3];
+			const { smallest, largest } = findSmallestAndLargest(numbers);
+
+			console.log(`Smallest - ${smallest}, Largest - ${largest}`);
+
+			if (isPrime(smallest)) {
+				console.log(`The smallest number ${smallest} is prime.`);
+			} else {
+				console.log(`The smallest number ${smallest} is not prime.`);
+			}
+
+			if (isPrime(largest)) {
+				console.log(`The largest number ${largest} is prime.`);
+			} else {
+				console.log(`The largest number ${largest} is not prime.`);
+			}
+		</script>
+	</body>
+</html>
