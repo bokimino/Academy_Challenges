@@ -1,0 +1,19 @@
+.mainBackground {
+	background-image: url(/images/trivia-questions-21f6f1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+}
+
+.mainBackground .text-center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgb(118, 118, 41);
+	opacity: 0.5;
+}
+#header-updated {
+	display: none;
+}

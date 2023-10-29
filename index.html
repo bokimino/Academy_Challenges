@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Document</title>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+		<!-- Latest compiled and minified Bootstrap 4.6 CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+			integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+			crossorigin="anonymous"
+		/>
+		<!-- CSS script -->
+		<link rel="stylesheet" href="style.css" />
+		<!-- <link rel="stylesheet" href="style.css" /> -->
+		<!-- Latest Font-Awesome CDN -->
+	</head>
+	<body>
+		<div class="mainBackground" id="mainBg">
+			<div class="text-center text-white p-3 rounded">
+				<h2 class="h1 text-capitalize">Loading Quiz....</h2>
+			</div>
+		</div>
+
+		<div id="header-initial" class="container text-center bg-light p-5">
+			<h1>Welcome to Brainster's Trivia!</h1>
+			<p>Click on the start button to begin</p>
+			<hr />
+			<button type="submit" id="startButton" class="btn btn-success">
+				Start
+			</button>
+		</div>
+		<div id="header-updated" class="container text-center bg-light p-5">
+			<h1>Good Luck!</h1>
+			<p>Click on the button to start over</p>
+			<hr />
+			<button type="submit" id="startOverButton" class="btn btn-warning">
+				Start Over
+			</button>
+		</div>
+		<div id="header-final" class="container text-center bg-light p-5">
+			<h1>Let's see your score</h1>
+			<p>Click on the button to start again</p>
+			<hr />
+			<button type="submit" id="tryAgainButton" class="btn btn-danger">
+				Try again
+			</button>
+		</div>
+
+		<div class="container" id="questionCard">
+			<div class="row">
+				<div class="col-8 offset-2 bg-light my-3">
+					<div class="card text-center">
+						<div id="question" class="card-header">Question</div>
+						<div id="answers" class="card-body">
+							<p class="card-text">exercise</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container text-center bg-light p-5" id="status">
+			<h2 id="progress-bar" class="h1 text-capitalize">Completed</h2>
+		</div>
+
+		<!-- jQuery library -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+			integrity="ha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Latest Compiled Bootstrap 4.6 JavaScript -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+			integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+			crossorigin="anonymous"
+		></script>
+		<script src="main.js" type="module"></script>
+	</body>
+</html>
