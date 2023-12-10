@@ -1,0 +1,29 @@
+.bg-img {
+    background-image: url('https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center; 
+    height: 100%;
+    background-repeat: repeat;
+    background-size: cover; 
+}
+.bg-brown {
+    background-color: #331107;
+}
+.outline {
+    outline-style: solid;
+    outline-color: white;
+    outline-offset: 5px;
+}
+.main-container {
+    position: relative; 
+    z-index: 1;
+}
+.random-img {
+    background-image: url('https://picsum.photos/500/300/?blur');
+    background-position: center; 
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.text-overlay {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+}
