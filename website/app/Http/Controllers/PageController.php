@@ -8,10 +8,8 @@ class PageController extends Controller
 {
     public function show($page)
     {
-        // return view("website.$page");
-        $bgImage = ''; // Default value
+        $bgImage = ''; 
 
-        // Set background image based on the page
         switch ($page) {
             case 'home':
                 $bgImage = '/images/home-bg.jpg';
@@ -25,7 +23,7 @@ class PageController extends Controller
             case 'contact':
                 $bgImage = '/images/contact-bg.jpg';
                 break;
-            // Add more cases for other pages as needed
+           
         }
 
       
